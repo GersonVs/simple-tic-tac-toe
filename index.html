@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Tic Tac Toe</title>
     <style>
         html, body {
             height: 100%;
@@ -48,7 +49,7 @@
 </head>
 
 <body>
-    <h1>Jogo da velha</h1>
+    <h1>Tic Tac Toe</h1>
     <div class="container">
         <div id="1"></div>
         <div id="2"></div>
@@ -72,9 +73,9 @@
                 
                 setTimeout(() => {
                     if (winner === 'win') {
-                        alert(`O jogador ${currentPlayer} venceu!`)
+                        alert(`Player ${currentPlayer} wins!`)
                     } else if (winner === 'tie') {
-                        alert(`Houve um empate!`)
+                        alert(`Tied!`)
                     }
 
                     if (currentPlayer === 'X') {
